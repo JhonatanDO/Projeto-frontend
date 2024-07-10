@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400);
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: rgb(255, 255, 255);
+}
+.dropdown {
+	display: none;
+	position: absolute;
+	background: #fff;
+	box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
+}
+
+nav{
+	position:relative;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	text-align: center;
+	margin-top:20px;
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	
+	&:after {
+		content:"";
+		display:table;
+		clear:both;
+	}
+	
+	ul{
+		li{
+			list-style: none;
+			display: inline-block;
+			oveflow: hidden;
+			
+			a{
+				display: block;
+				padding: 10px 40px;
+				text-decoration: none;
+				font-size: 18px;
+				position: relative;
+				color: fade(white, 80%);
+				transform: translateX(-15%);
+				border-radius: 50px;
+				width: 130%;
+				text-align: center;
+				transition-duration: 0.25s;
+				
+				&:hover{
+					color: white;
+				}
+			}
+			
+			&.active{
+				a{
+					color: rgb(52, 7, 82);
+				}
+			}
+			
+			&:nth-child(1){
+				a{
+					background-color: #e77e1c;
+				}
+			}
+			
+			&:nth-child(2n){
+				a{
+					background-color: #008737;
+				}
+			}
+			
+			&:nth-child(3n){
+				a{
+					background-color: #FFC300;
+				}
+			}
+			
+			&:nth-child(4n){
+				a{
+					background-color: #E62D87;
+				}
+			}
+			
+			&:nth-child(5n){
+				a{
+					background-color: #3772e0;
+				}
+			}
+		}
+	}
+	
+	.dot{
+		background-color: red;
+		width: 6px;
+		height: 6px;
+		position: absolute;
+		bottom: -20px;
+		left: 0;
+		border-radius: 50%;
+		transition-duration: 0.5s;
+	}
+}
+.meio{
+	width: 80%;
+	margin:0 auto;
+	margin-top: 50px;
+}
+.img1{
+	margin:0 auto;
+
+	width: 100%;
+	height:  20em;
+}
+#im{
+	width:100%;
+	margin:0 auto;
+	display: block;
+	height:  20em;
+}
+
+.footer{
+	width:99%;
+    margin: 0;
+	height:40px;
+	text-align: center;
+	
+	position: relative;
+	padding-left: 0;
+}
+.titulo{
+	margin: auto;
+	text-align: right;
+}
+#text{
+    text-align: justify;
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 10px;
+
+
+}
+.video{
+	width: 750px;
+    margin:0 auto;
+}
