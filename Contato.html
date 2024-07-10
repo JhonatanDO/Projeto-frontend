@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="js/inicio.js">
+    <link rel="stylesheet" href="Contato.html">
+    <link rel="stylesheet" href="css/acessibilidade.css">
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+    <title>Contato</title>
+</head>
+<body>
+    <div class="img1">
+        <img  src="img/innove_nutricao.png" style="margin:0 auto;" id="im">
+     </div>
+
+     <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+
+    <nav>
+        <div class="dot"></div>
+        <ul>
+            <li class="active"><a href="inicio.html">Início</a></li>
+            <li><a href="Verduras.html">Verduras</a></li>
+            <li><a href="Legumes.html">Legumes</a></li>
+            <li><a href="Frutas.html">Frutas</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+               
+        <form name="contato">
+        
+            <div class="tag">
+                <label>Nome:</label>
+            </div>
+            <div class="box">
+                <input class="form-control" type="text" name="nome"><br>
+            </div>
+            <br><br>
+            <div class="tag">
+                <label>E-mail:</label>
+            </div>
+            <div class="box">
+                <input  class="form-control" type="email" name="email"><br>
+            </div>
+            <br><br>
+            <div class="tag">
+                <span>Sexo</span>
+            </div>
+            <div class="box">
+                <input  type="radio" name="sexo">Masculino
+                <input  type="radio" name="sexo">Feminino
+                <br><br>
+            </div>
+            <div class="tag">
+                <span>Estado Civil</span> 
+            </div>
+            <div class="box">
+                <input  type="checkbox" name="estado">Casado
+                <input  type="checkbox" name="estado">Solteiro
+                <input  type="checkbox" name="estado">Divorciado
+            </div>
+            <br><br>
+            <div class="tag">
+            <span> Assunto:</span>
+            </div>  
+            <div class="box">
+                <select  name="assunto">
+                <option value="elogio" selected>Elogio</option> 
+                <option value="sugestao" >Sugestão</option>
+                <option value="reclamacao">Reclamação</option>
+                <option value="duvidas">Dúvidas</option>
+                <option value="outros">Outros</option>
+                </select><br>
+            </div>
+            <br><br>
+            <div class="tag">
+                <span> Mensagem:</span><br>
+            </div>
+            <div class="box"></div>
+                <textarea  name="mensagem" rows="10" cols="33" 
+                placeholder="Mensagem">			
+            </textarea>	<br><br>
+    
+            <button  type="submit" value="Enviar">
+            Enviar</button>
+            <button  type="reset"  value="Limpar">
+            Limpar</button>
+</form>
+</div>
+
+</div>
+
+      <footer class="footer">
+        <p>Desenvolvido por @Senac</p>
+    </footer>
+</body>
